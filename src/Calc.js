@@ -8,7 +8,9 @@ function Calc(props) {
 
   const genButton = (value, key, type, func) => {
     return (
-      <button className={"btn btn-" + type} onClick={func} value={value} key={key}>{value}</button>
+      <div className="text-center p-2">
+        <button className={"col btn btn-" + type} onClick={func} value={value} key={key}>{value}</button>
+      </div>
     )
   }
 
@@ -27,16 +29,16 @@ function Calc(props) {
   try {
     result = eval(formula);
     showType = "primary";
-    showMessage = "正常に計算ができたよ！";
+    showMessage = "正常に計算できました";
   } catch (e) {
     result = e.message;
     showType = "danger";
-    showMessage = "式が正しくありません！正しく入力されるのをお待ちしております。";
+    showMessage = "式が正しくありません";
   }
 
   return (
     <div>
-      <div className={"alert alert-" + showType} role="alert">
+      <div className={"mt-3 alert alert-" + showType} role="alert">
         <h4 className="alert-heading">{showMessage}</h4>
         <hr />
         {result}
@@ -46,10 +48,19 @@ function Calc(props) {
         <hr />
         {formula}
       </div>
-      {["7", "8", "9", "4", "5", "6", "1", "2", "3", "0", "00", "000", "."].map((value, key) => genButton(value, key, "primary", writeFormula))}
-      {["+", "-", "*", "/", "(", ")"].map((value, key) => genButton(value, key, "success", writeFormula))}
-      <button className="btn btn-warning" onClick={delOneChar}>一文字消す</button>
-      <button className="btn btn-danger" onClick={allClear}>全部消す</button>
+      <div className="row row-cols-2">
+        <div className="text-center p-2">
+          <button className="col btn btn-warning" onClick={delOneChar}>一文字消す</button>
+        </div>
+        <div className="text-center p-2">
+          <button className="col btn btn-danger" onClick={allClear}>全部消す</button>
+        </div>
+      </div>
+      <div className="row row-cols-3">
+        {["7", "8", "9", "4", "5", "6", "1", "2", "3", "0", "000", "."].map((value, key) => genButton(value, key, "primary", writeFormula))}
+        {["+", "-", "*", "/", "(", ")"].map((value, key) => genButton(value, key, "success", writeFormula))}
+        {["Math.PI", "Math.abs(", "Math.log10(", "Math.sin(", "Math.cos(", "Math.tan("].map((value, key) => genButton(value, key, "info", writeFormula))}
+      </div>
     </div>
   )
 }
