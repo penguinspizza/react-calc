@@ -17,7 +17,7 @@ function Layout(props) {
         <span className="text-muted">{props.footer}</span>
       </div>
     </div>
-  )
+  );
 }
 
 export default Layout;

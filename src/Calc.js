@@ -11,7 +11,7 @@ function Calc(props) {
       <div className="text-center p-2">
         <button className={"col btn btn-" + type} onClick={func} value={value} key={key}>{value}</button>
       </div>
-    )
+    );
   }
 
   const writeFormula = (e) => {
@@ -62,7 +62,7 @@ function Calc(props) {
         {["Math.PI", "Math.abs(", "Math.log10(", "Math.sin(", "Math.cos(", "Math.tan("].map((value, key) => genButton(value, key, "info", writeFormula))}
       </div>
     </div>
-  )
+  );
 }
 
 export default Calc;
