@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-calc/static/css/main.ea1455b2.chunk.css",
+    "main.js": "/react-calc/static/js/main.dc8c59f6.chunk.js",
+    "main.js.map": "/react-calc/static/js/main.dc8c59f6.chunk.js.map",
+    "runtime-main.js": "/react-calc/static/js/runtime-main.1e1a1bad.js",
+    "runtime-main.js.map": "/react-calc/static/js/runtime-main.1e1a1bad.js.map",
+    "static/js/2.c7772404.chunk.js": "/react-calc/static/js/2.c7772404.chunk.js",
+    "static/js/2.c7772404.chunk.js.map": "/react-calc/static/js/2.c7772404.chunk.js.map",
+    "static/js/3.c7e60c6a.chunk.js": "/react-calc/static/js/3.c7e60c6a.chunk.js",
+    "static/js/3.c7e60c6a.chunk.js.map": "/react-calc/static/js/3.c7e60c6a.chunk.js.map",
+    "index.html": "/react-calc/index.html",
+    "static/css/main.ea1455b2.chunk.css.map": "/react-calc/static/css/main.ea1455b2.chunk.css.map",
+    "static/js/2.c7772404.chunk.js.LICENSE.txt": "/react-calc/static/js/2.c7772404.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/react-calc/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1e1a1bad.js",
+    "static/js/2.c7772404.chunk.js",
+    "static/css/main.ea1455b2.chunk.css",
+    "static/js/main.dc8c59f6.chunk.js"
+  ]
+}
